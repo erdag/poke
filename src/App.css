@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.pokelist table{
+  
+  border-collapse: collapse;
+  border-spacing: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.pokelist th{
+  background-color: lightblue;
 }
+
+.pokelist tr{
+  text-align: center;
+  border-bottom:grey 1px solid;
+}
+
+.pokelist tr:nth-child(3n+1) {
+  background-color: thistle;
+}
+
+
+
+
+
+td {
+min-width: 60px;
+display: table-cell;
+padding: 4px 10px;
+}
+
+
+
+
+.type-icon {
+  background-color: #ab2;
+  margin: 1px 0;
+  width: 66px;
+  border-radius: 4px;
+  border: 1px gray solid;
+  padding: 3px;
+  color: aliceblue;
+  font-size: 0.75rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  transition: opacity .4s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.type-Poison {
+  background-color: hotpink;
+}
+
+.type-Fire {
+  background-color: red;
+}
+
+.type-Grass {
+  background-color: greenyellow;
+}
+
+.type-Water {
+  background-color: aqua;
+}
+.type-Dragon {
+  background-color: orange;
+}
+
+.type-Flying {
+  background-color: gold;
+}
+
+
+.type-Ground {
+  background-color:grey;
+}
+
+.type-Rock {
+  background-color: rosybrown;
+}
+
+.type-Bug {
+  background-color: burlywood;
+}
+
+.type-Ghost {
+  background-color: gainsboro;
+}
+
+.type-Normal {
+  background-color: navy;
+}
+
+.type-Ice{
+  background-color: indianred;
+}
+
+.type-Dark {
+  background-color: darkolivegreen;
+}
+
+.type-Steel {
+  background-color: skyblue;
+}
+
+.type-Electric {
+  background-color: lightpink;
+}
+
+.type-Fighting {
+  background-color: fuchsia;
+}
+.type-Fairy {
+  background-color: firebrick;
+}
+
+.type-null  {
+  display: none;
+}
+
+
+
+
+
+
